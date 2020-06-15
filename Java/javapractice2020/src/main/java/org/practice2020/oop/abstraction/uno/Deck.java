@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Random;
+import java.util.function.Supplier;
 
 public class Deck {
 
@@ -77,8 +78,8 @@ public class Deck {
     }
 
     public UnoCard getRandomCard() {
-        Random random = new Random();
-        return cards.get(random.nextInt(cards.size()));
+        Supplier<UnoCard> generator = () -> cards.get(new Random().nextInt(cards.size()));
+        return generator.get();
     }
 
     public void remove(int fromIndex, int toIndex) {
