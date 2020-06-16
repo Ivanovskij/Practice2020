@@ -3,3 +3,13 @@ server:
 spring:
   application:
     name: Practice2020
+  datasource:
+    url: jdbc:mysql://localhost:3306/practice2020?characterEncoding=utf8
+    username: root
+    password: root
+    initialization-mode: always
+  jpa:
+    hibernate:
+      ddl-auto: update
+      naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
+    properties.hibernate.dialect: org.hibernate.dialect.MySQL5Dialect
