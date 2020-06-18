@@ -21,3 +21,15 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+
+
+/.idea/
+/core/core.iml
+/.gitignore
+/springboot.iml
+/core/target/
+/model/target/
+/model/model.iml
+/java7vs8/.idea/
+/java7vs8/target/
+/java7vs8/java7vs8.iml
